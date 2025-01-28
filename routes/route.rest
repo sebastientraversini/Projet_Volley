@@ -1,0 +1,26 @@
+GET http://localhost:3000/volleyballPlayers
+
+###
+GET http://localhost:3000/volleyballPlayers/6797a0a3614a9d3f869baf41
+
+###
+
+POST http://localhost:3000/volleyballPlayers
+Content-Type: application/json
+
+{
+    "name": "Robin"
+}
+
+
+###¨
+
+DELETE http://localhost:3000/volleyballPlayers/6797a0a3614a9d3f869baf41
+
+### 
+PATCH http://localhost:3000/volleyballPlayers/6797a0a3614a9d3f869baf41
+Content-Type: application/json
+
+{
+    "name": "Sébastien"
+}
