@@ -40,5 +40,4 @@ app.use((error, req, res, next) => {
   res.render('error', { error })
 })
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server Started on port ${PORT}!`));
+app.listen(process.env.PORT || 3000, () => console.log('Server Started!'))
