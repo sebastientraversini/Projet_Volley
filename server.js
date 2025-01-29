@@ -25,10 +25,11 @@ db.once('open', () => console.log('connected to database'))
 
 app.use(express.json())
 
+let w = "some value"; // Define the variable 'w' with an appropriate value
+
 const volleyballRouter = require('./routes/volleyballPlayers.js')
 app.use('/volleyballPlayers', volleyballRouter)
 
 app.use('/', indexRouter)
 
 app.listen(process.env.PORT || 3000, () => console.log('Server Started!'));
-
